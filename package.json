@@ -1,0 +1,56 @@
+{
+  "name": "maluchy",
+  "version": "1.0.0",
+  "description": "Uruchomienie:",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack --mode development --open",
+    "dev": "webpack --mode development --module-bind js=babel-loader --watch --open",
+    "compile": "webpack --mode development --module-bind js=babel-loader",
+    "build": "webpack --mode production --module-bind js=babel-loader"
+  },
+  "author": "artgroup",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "autoprefixer": "^9.5.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^2.1.1",
+    "dotenv-webpack": "^7.0.2",
+    "jquery": "^3.3.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "pagepiling.js": "^1.5.6",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "slugify": "^1.5.2",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^2.3.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^4.3.1",
+    "js-cookie": "^2.2.1",
+    "lity": "^2.4.1",
+    "popper.js": "^1.14.7",
+    "sticky-kit": "^1.1.3",
+    "tiny-slider": "^2.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkrawczykowski/maluchy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mkrawczykowski/maluchy/issues"
+  },
+  "homepage": "https://github.com/mkrawczykowski/maluchy#readme"
+}
