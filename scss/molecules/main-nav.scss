@@ -1,0 +1,98 @@
+.main-nav {
+  padding: 3.4rem 0 3.2rem 0;
+
+  @media (min-width: 992px) {
+    margin-top: 0;
+  }
+
+  & > .container {
+    & > .row {
+      & > .col {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__logo {
+    width: 100%;
+
+    @media (min-width: 992px) {
+      width: auto;
+    }
+
+    picture {
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      width: 9.4rem;
+      @media (min-width: 992px) {
+        width: 12.2rem;
+        display: inline;
+        margin: 0;
+      }
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @media (min-width: 992px) {
+      display: flex;
+      height: 100%;
+      align-items: center;
+
+      & > li {
+        & > a {
+          font-size: 1.9rem;
+          line-height: 2.2rem;
+          color: $gray2;
+          font-family: "Raleway", sans-serif;
+          position: relative;
+          text-transform: lowercase;
+
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 0.1rem;
+            display: block;
+            background-color: $gray2;
+            transition: all 0.3s ease;
+          }
+
+          &:hover {
+            &:before {
+              width: 100%;
+              left: 0;
+              transition: all 0.3s ease;
+            }
+            text-decoration: none;
+          }
+        }
+
+        &:not(:last-child) {
+          a {
+            @media (min-width: 992px) {
+              margin: 0 1.5rem;
+            }
+          }
+        }
+
+        &:last-child {
+          a {
+            @media (min-width: 992px) {
+              margin: 0 0 0 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__additional-nav {
+    display: none;
+  }
+}

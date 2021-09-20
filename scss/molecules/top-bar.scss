@@ -1,0 +1,28 @@
+.top-bar {
+  background-color: $mainpurple;
+  padding: 2.2rem 0 2.3rem 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  @media (min-width: 992px) {
+    position: static;
+  }
+
+  & > .container {
+    & > .row {
+      flex-direction: column;
+
+      @media (min-width: 992px) {
+        flex-direction: row;
+      }
+      & > .col {
+        &.top-bar__first-column {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

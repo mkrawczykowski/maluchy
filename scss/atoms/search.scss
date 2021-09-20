@@ -1,0 +1,17 @@
+.search {
+  & > input {
+    background: $white url(../images/magnify.svg) no-repeat left 2.2rem top 1.1rem;
+    border: 1px solid $mainpurple;
+    border-radius: 20px;
+    padding: 0.9rem 2rem 0.7rem 5.8rem;
+    font-size: 1.9rem;
+    font-family: "Raleway", sans-serif;
+    width: 26rem;
+    font-style: normal;
+    color: $black;
+
+    &::placeholder {
+      color: $gray;
+    }
+  }
+}

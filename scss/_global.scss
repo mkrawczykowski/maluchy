@@ -17,7 +17,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   height: 100%;
-  font-family: "Ferrovial New";
+  // font-family: "Ferrovial New";
 }
 
 a {
@@ -59,54 +59,4 @@ p {
 
 .text-center {
   text-align: center;
-}
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
-}
-
-section {
-  padding: 0 2rem;
-
-  @media (min-width: 768px) {
-    padding: 0 3rem;
-  }
-  @media (min-width: 992px) {
-    padding: 0 4rem;
-  }
-  @media (min-width: 1024px) {
-    padding: 0 5rem;
-  }
-  @media (min-width: 1200px) {
-    padding: 0 6rem;
-  }
-  @media (min-width: 1540px) {
-    padding: 0 7rem;
-  }
-}
-
-body {
-  &.single-offer {
-    section {
-      margin: 0 -15px 0 -15px;
-    }
-  }
-}
-
-.background-yellow {
-  background-color: $yellow;
-}
-
-.background-gray {
-  background-color: $gray4;
-}
-
-.background-black {
-  background-color: $black;
-}
-
-.background-light-gray {
-  background-color: $gray3;
 }

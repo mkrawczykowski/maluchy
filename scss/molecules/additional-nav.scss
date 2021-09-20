@@ -1,0 +1,55 @@
+.additional-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  flex-direction: column;
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+  }
+
+  & > li {
+    & > a {
+      font-size: 1.9rem;
+      line-height: 2.2rem;
+      color: $white;
+      font-family: "Raleway", sans-serif;
+      position: relative;
+      text-transform: lowercase;
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0.1rem;
+        display: block;
+        background-color: $white;
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        &:before {
+          width: 100%;
+          left: 0;
+          transition: all 0.3s ease;
+        }
+        text-decoration: none;
+      }
+    }
+
+    &:not(:last-child) {
+      a {
+        margin: 0 1.4rem;
+      }
+    }
+
+    &:last-child {
+      a {
+        margin: 0 0 0 1.4rem;
+      }
+    }
+  }
+}
